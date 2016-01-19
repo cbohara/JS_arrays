@@ -7,11 +7,11 @@ to fix the library by implementing them. In this section, the functions have to 
 
 The files in the `spec` directory contain the test suites. Your goal is to get all the tests to pass by implementing the missing functions. Run all the tests by opening `SpecRunner.html` in your browser.
 
-The file `src/objects.js` contains function definitions and explanations for the following functions (*italicized functions* are solved for you). Pass each of the tests by having the functions return the correct value:
+The file `src/array.js` contains function definitions and explanations for the following functions (*italicized functions* are solved for you). Pass each of the tests by having the functions return the correct value:
 
 
 #### Tests:
-- [ ] MysticalAnimal
+- [ ] TreasureChest
 - [ ] AddFirstProperty
 - [ ] AddSecondProperty
 - [ ] AddThirdProperty
