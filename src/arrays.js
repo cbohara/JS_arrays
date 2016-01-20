@@ -21,7 +21,7 @@
 // you access data from an array by just asking for the value stored at a certain numbered position.
 
 // Arrays are 0-indexed. That is, the first thing that you put in there will go in at index 0. So if you have 3 things in your array, they will be at arr[0], arr[1], and arr[2].
-
+//test
 arrays.treasureChest = function(){
   var treasureChest = [];// 1. Create an empty array called treasureChest.
   // 2. place your treasureChest after the return statement
