@@ -23,9 +23,9 @@
 // Arrays are 0-indexed. That is, the first thing that you put in there will go in at index 0. So if you have 3 things in your array, they will be at arr[0], arr[1], and arr[2].
 
 arrays.treasureChest = function(){
-  // 1. Create an empty array called treasureChest.
+  var treasureChest = [];// 1. Create an empty array called treasureChest.
   // 2. place your treasureChest after the return statement
-  return;
+  return treasureChest;
 };
 
  // don't touch this line
@@ -34,9 +34,9 @@ var treasureChest = arrays.treasureChest();
 
 
 arrays.addFurJackets = function(){
-  // 1. Let's make the value at position 0 'fur jackets'.
+  treasureChest[0] = 'fur jackets';// 1. Let's make the value at position 0 'fur jackets'.
   // 2. place your treasureChest after the return statement
-  return;
+  return treasureChest;
 
 }
 
@@ -44,24 +44,24 @@ arrays.addFurJackets = function(){
 arrays.overWriteValue = function(){
   // don't touch this line
   var newTreasureChest = treasureChest.slice();
-  // 1. console.log newTreasureChest
-  // 2. Overwrite the value stored at position 0 of newTreasureChest to be 'ethically sourced sandals'.
+  console.log(newTreasureChest);// 1. console.log newTreasureChest
+  newTreasureChest[0] = 'ethically sourced sandals';// 2. Overwrite the value stored at position 0 of newTreasureChest to be 'ethically sourced sandals'.
   // 3. place your newTreasureChest after the return statement
-  return;
+  return newTreasureChest;
 }
 
 arrays.checkLength = function(){
   // 1. return the length of treasureChest array?
-  return;
+  return treasureChest.length;
 }
 
   // That's right, even though our array is 0-indexed (starts counting at 0), our length property that JS gives us automatically is 1-indexed (starts counting at 1). So right now we have an array with a value stored at position 0, and a length of 1.
 
 arrays.addFriends = function(){
-  // 1. Now let's add the string 'friends' to the end of our array.
+  treasureChest.push('friends');// 1. Now let's add the string 'friends' to the end of our array.
   // 2. place your treasureChest after the return statement
   // return
- return;
+ return treasureChest;
   
 }
  
@@ -77,11 +77,11 @@ arrays.addFriends = function(){
       // Push is a method you will use all the time. In summary, you invoke it on an array, and pass in as an argument the item you want to add onto the end of the array.
 
 arrays.addThreeValues = function () {
-  // 1. Using push, add three values to the end of our treasureChest. Make up your own ideas of things that our dragon might collect in her treasureChest!
-  // Be sure to console.log your treasureChest after each one to see what the results are.
+  treasureChest.push('hair brush', 'tooth brush', 'sponge');// 1. Using push, add three values to the end of our treasureChest. Make up your own ideas of things that our dragon might collect in her treasureChest!
+  console.log(treasureChest);// Be sure to console.log your treasureChest after each one to see what the results are.
   // We should now have at least 5 things in our treasureChest array. Mine looks like this: ['ethically sourced sandals', 'friends', 'rock climbing gear', 'JS knowledge', 'colored pants'].
   // 2. place your treasureChest after the return statement
-  return;
+  return treasureChest;
   
 }
 
@@ -92,28 +92,28 @@ arrays.addThreeValues = function () {
 // .pop() will take the last value out of an array and give it to you.
 
 arrays.removeLastItem = function(){
-  // 1. use .pop() method to return the last value in the treasureChest array;
-  // 2. console log treasureChest. What does your array look like afterwards?
+  treasureChest.pop();// 1. use .pop() method to return the last value in the treasureChest array;
+  console.log(treasureChest);// 2. console log treasureChest. What does your array look like afterwards?
   // 3. place your treasureChest after the return statement
-  return;
+  return treasureChest;
 
   
 }
 // .unshift() works just like push, but for the start of our array (Hint: both unshift and push have the letter 'u' in their names).
 
 arrays.addFirstItem = function(){
-  // 1. use .unshift() to add the value 'peg leg' to the beginning of the treasureChest array.
+  treasureChest.unshift('peg leg');// 1. use .unshift() to add the value 'peg leg' to the beginning of the treasureChest array.
   // 2. place your treasureChest after the return statement
-   return;
+   return treasureChest;
 
 }
 
 // .shift() works just like pop, but for the start of our array (Hint: shift is shorter than unshift, just like pop is shorter than push).
 
 arrays.removeFirstItem = function(){
-  // 1. use .shift() to remove the value 'peg leg' from the beginning of the treasureChest array.
+  treasureChest.shift();// 1. use .shift() to remove the value 'peg leg' from the beginning of the treasureChest array.
   // 2. place your treasureChest after the return statement
-   return;
+   return treasureChest; 
 
 };
 
