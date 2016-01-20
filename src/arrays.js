@@ -25,30 +25,49 @@
 arrays.treasureChest = function(){
   // 1. Create an empty array called treasureChest.
   // 2. place your treasureChest after the return statement
-  return
+  return;
 };
+
  // don't touch this line
 var treasureChest = arrays.treasureChest();
 
-// 2. Let's make the value at position 0 'fur jackets'.
-// Suddenly, our dragon is either A) attacked by PETA for having animal fur jackets, or B) decides to move somewhere warm. Either way, she's no longer in need of fur jackets.
+
+
+arrays.addFurJackets = function(){
+  // 1. Let's make the value at position 0 'fur jackets'.
+  // 2. place your treasureChest after the return statement
+  return;
+
+}
 
 
 arrays.overWriteValue = function(){
-	// don't touch this line
-	var newTreasureChest = treasureChest.slice();
-	// console.log newTreasureChest
-	// 3. Overwrite the value stored at position 0 of newTreasureChest to be 'ethically sourced sandals'.
-	// return newTreasureChest
-	return 
+  // don't touch this line
+  var newTreasureChest = treasureChest.slice();
+  // 1. console.log newTreasureChest
+  // 2. Overwrite the value stored at position 0 of newTreasureChest to be 'ethically sourced sandals'.
+  // 3. place your newTreasureChest after the return statement
+  return;
 }
 
-// 4. What is the length of our array?
+arrays.checkLength = function(){
+  // 1. return the length of treasureChest array?
+  return;
+}
+
   // That's right, even though our array is 0-indexed (starts counting at 0), our length property that JS gives us automatically is 1-indexed (starts counting at 1). So right now we have an array with a value stored at position 0, and a length of 1.
 
-// 5. Now let's add a value to the end of our array. Ours is a very caring dragon. One of her biggest treasures is her friends, so let's add the string 'friends' to the end of our array.
+arrays.addFriends = function(){
+  // 1. Now let's add the string 'friends' to the end of our array.
+  // 2. place your treasureChest after the return statement
+  // return
+ return;
+  
+}
  
-    // 3. push: arr.push(value); .push() is a method built into all arrays. It's a very simple and useful method. All it does is add a value to the end of an array. treasureChest.push('friends'); will add the string 'friends' to the end of our treasureChest array.
+ /**************** About push(), pop(), unshift() & shift() methods ****************/
+
+    // push: arr.push(value); .push() is a method built into all arrays. It's a very simple and useful method. All it does is add a value to the end of an array. treasureChest.push('friends'); will add the string 'friends' to the end of our treasureChest array.
       // Let's talk through exactly what happens when we invoke treasureChest.push('peacock feathers'):
       // First, the interpreter reads left to right, so it evaluates the variable on the left side. It looks this up and finds it's an array, so it 'replaces' the variable with the array that variable is equal to. Now instead of treasureChest, we have an actual array.
       // Next we invoke a method on that array. We're just using dot notation here like we learned yesterday! The only thing that's slightly different is that this property is a function.
@@ -57,20 +76,54 @@ arrays.overWriteValue = function(){
       // Push then adds the item to the next open position in our array, and the array properties that are built in for us by default will update the length for us.
       // Push is a method you will use all the time. In summary, you invoke it on an array, and pass in as an argument the item you want to add onto the end of the array.
 
-// 6. Try using all three of these patterns to add values to the end of our treasureChest. Make up your own ideas of things that our dragon might collect in her treasureChest!
+arrays.addThreeValues = function () {
+  // 1. Using push, add three values to the end of our treasureChest. Make up your own ideas of things that our dragon might collect in her treasureChest!
   // Be sure to console.log your treasureChest after each one to see what the results are.
-  // What is our length going to be after each new item is added?
-// We should now have at least 5 things in our treasureChest array. Mine looks like this: ['ethically sourced sandals', 'friends', 'rock climbing gear', 'JS knowledge', 'colored pants'].
+  // We should now have at least 5 things in our treasureChest array. Mine looks like this: ['ethically sourced sandals', 'friends', 'rock climbing gear', 'JS knowledge', 'colored pants'].
+  // 2. place your treasureChest after the return statement
+  return;
+  
+}
 
-// 7. Go through and access each value in the array. This might feel tedious, but building up the muscle memory of it will be really helpful later on when you don't even have to think about this anymore!
+//Go through and access each value in the array. This might feel tedious, but building up the muscle memory of it will be really helpful later on when you don't even have to think about this anymore!
 // While .push is by far the most used array method, there are a couple others worth knowing that they exist, though you won't need to have them memorized like you should have .push memorized.
+
+
 // .pop() will take the last value out of an array and give it to you.
 
-// 8. invoke treasureChest.pop(); What value is returned to you? What does your array look like afterwards?
+arrays.removeLastItem = function(){
+  // 1. use .pop() method to return the last value in the treasureChest array;
+  // 2. console log treasureChest. What does your array look like afterwards?
+  // 3. place your treasureChest after the return statement
+  return;
+
+  
+}
 // .unshift() works just like push, but for the start of our array (Hint: both unshift and push have the letter 'u' in their names).
+
+arrays.addFirstItem = function(){
+  // 1. use .unshift() to add the value 'peg leg' to the beginning of the treasureChest array.
+  // 2. place your treasureChest after the return statement
+   return;
+
+}
+
 // .shift() works just like pop, but for the start of our array (Hint: shift is shorter than unshift, just like pop is shorter than push).
 
-// 9. Use both .unshift and .shift on your treasureChest. As always, console.log your treasureChest afterwards to see the result. What happens? Can you explain it to your pair?
+arrays.removeFirstItem = function(){
+  // 1. use .shift() to remove the value 'peg leg' from the beginning of the treasureChest array.
+  // 2. place your treasureChest after the return statement
+   return;
+
+};
+
+
+
+                      /*****************************/
+
+                               //Extra Credit      
+
+                      /*****************************/
 
 // 10. Now that we've populated treasureChest, let's add that to the mysticalAnimal object we created yesterday. We had a property on there called collects. Overwrite that property with the trasureChest array we've been playing with. console.log the mysticalAnimal object afterwards to make sure the collects property is now set equal to your array.
 // 11. Create an empty array called grandCouncil. This is where we'll store all of the mysticalAnimal objects we'll create!
